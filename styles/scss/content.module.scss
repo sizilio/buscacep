@@ -7,7 +7,7 @@
 }
 
 .image {
-    border-radius: 50%;
+    display: inline-block
 }
 
 .name {
@@ -32,6 +32,11 @@
     padding: 5px 15px;
     margin: 5px;
     border-radius: 10px;
-    display: inline-block;
     text-align: center;
+    min-height: 55px;
+
+    span {
+        margin-right: 10px;
+        font-weight: lighter;
+    }
 }
