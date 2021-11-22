@@ -13,13 +13,13 @@ export default function Content() {
                         <p>Para usar a API basta acessar url <u>https://correioscep.vercel.app/api/cep/</u> com o CEP no final.</p>
                         <p className="mt-0">
                             Exemplo: 
-                            <b><a href="https://correioscep.vercel.app/api/cep/39403440" target="_blank">https://correioscep.vercel.app/api/cep/39403440</a></b>.
+                            <b><a href="https://correioscep.vercel.app/api/cep/39403440" target="_blank" rel="noreferrer">https://correioscep.vercel.app/api/cep/39403440</a></b>.
                         </p>
                     </code>
                     <div className="mt-0"> 
                         <div className={Styles.label + " d-inline-flex align-items-center justify-content-center"}>
                             <span>Feito com</span>
-                            <a href="https://nextjs.org/" target="_blank">
+                            <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
                                 <Image
                                     src="/nextjs.png"
                                     alt="NextJS"
@@ -31,7 +31,7 @@ export default function Content() {
                         </div>
                         <div className={Styles.label + " d-inline-flex align-items-center justify-content-center"}>
                             <span>Hospedado em</span>
-                            <a href="https://vercel.com/" target="_blank">
+                            <a href="https://vercel.com/" target="_blank" rel="noreferrer">
                                 <Image
                                     src="/vercel.png"
                                     alt="Vercel"
