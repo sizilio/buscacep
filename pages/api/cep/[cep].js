@@ -4,17 +4,22 @@ async function handler (req, res) {
   try {
     const cepCheck = await cepValidate(cep)
     const result = await getAddress(cepCheck)
+    
+    if (!result) throw new Error();
+    
     res.status(200).send(result)
   } catch (err) {
-    res.status(500).send({ error: 'Invalid CEP' })
+    res.status(500).send({ erro: 'CEP inválido' })
   }
 }
 
 async function getAddress (cep) {
   const res = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
   const data = await res.json()
-  
-  if (data) {
+
+  if (typeof data.erro !== 'undefined') 
+    return false
+  else
     return {
       'cep': data.cep,
       'logradouro': data.logradouro,
@@ -23,9 +28,6 @@ async function getAddress (cep) {
       'cidade': data.localidade,
       'uf': data.uf
     }
-  }
-
-  return false
 }
 
 async function cepValidate (cep) {

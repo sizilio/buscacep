@@ -19,27 +19,15 @@ export default function Content() {
                             />
                             <h1 className={Styles.name + " mt-4 text-uppercase"}>Correios API - CEP</h1>
                             <h2 className={Styles.idd + " mb-0"}>Busca de endereço pelo CEP</h2>
-                            <code className={Styles.text + " d-block w-100 my-4"}>
+                            <code className={Styles.text + " d-block w-100 my-5"}>
                                 <p>API gratuita e de alto desempenho para consultar <b>Códigos de Endereçamento Postal (CEP)</b> do Brasil.</p>
-                                <p>O endereço é buscado em três banco de dados (webservices) diferentes, o primeiro que retornar é exibido na requisição.</p>
+                                <p>O endereço é procurado em três banco de dados (webservices) diferentes, o primeiro que retornar é exibido na requisição.</p>
                                 <p>Para receber dados da API, um CEP no formato de 8 dígitos deve ser fornecido.</p>
-                                <p>
-                                    Exemplo: 
-                                    <b>
-                                        <a href={url + '39403000'} target="_blank" rel="noreferrer">
-                                            {url + '39403000'}
-                                        </a>
-                                    </b>.
-                                </p>
-                                <p className="mb-0">O retorno será em JSON, algo assim:</p>
                                 <p className="mb-0">
-                                    <Image
-                                        src="/return.png"
-                                        alt="Retorno API Correios CEP"
-                                        width={389}
-                                        height={158}
-                                        className={Styles.image}
-                                    />
+                                    Exemplo: 
+                                    <a href={url + '39400001'} target="_blank" rel="noreferrer">
+                                        {url + '39400001'}
+                                    </a>
                                 </p>
                             </code>
                         </div>
