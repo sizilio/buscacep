@@ -18,6 +18,11 @@
     font-weight: 600
 }
 
+.index {
+    z-index: 9999;
+    position: relative;
+}
+
 .text {
     font-size: 16px;
     text-align: left;
@@ -43,7 +48,7 @@
     color: #272727;
     font-weight: bold;
     background-color: #f7f7f7;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 
     span {

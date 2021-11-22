@@ -9,7 +9,7 @@ export default function Content() {
             <div className="row">
                 <div className="col-12 col-md-6 offset-md-3">
                     <div className={Styles.card + " shadow"}>
-                        <div className="pt-5 px-3 px-md-5 text-center">
+                        <div className={Styles.index + " py-5 px-3 px-md-5 text-center shadow"}>
                             <Image
                                 src="/correios.png"
                                 alt="Correios"
@@ -19,7 +19,7 @@ export default function Content() {
                             />
                             <h1 className={Styles.name + " mt-4 text-uppercase"}>Correios API - CEP</h1>
                             <h2 className={Styles.idd + " mb-0"}>Busca de endereço pelo CEP</h2>
-                            <code className={Styles.text + " d-block w-100 my-5"}>
+                            <code className={Styles.text + " d-block w-100 mt-4"}>
                                 <p>API gratuita e de alto desempenho para consultar <b>Códigos de Endereçamento Postal (CEP)</b> do Brasil.</p>
                                 <p>O endereço é procurado em três banco de dados (webservices) diferentes, o primeiro que retornar é exibido na requisição.</p>
                                 <p>Para receber dados da API, um CEP no formato de 8 dígitos deve ser fornecido.</p>
