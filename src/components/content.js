@@ -63,7 +63,7 @@ export default function Content() {
                             <div className="col-12 col-md-4 p-0 d-flex justify-content-center">
                                 <div className={Styles.label + " d-inline-flex align-items-center justify-content-center"}>
                                     <span>Criado por</span>
-                                    <a href="https://sizilio.vercel.app" target="_blank" rel="noreferrer">
+                                    <a href="https://sizilio.net?ref=vercel" target="_blank">
                                         Vinícius Sizílio
                                     </a>
                                 </div>
